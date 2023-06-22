@@ -1,10 +1,10 @@
-import styles from '../../../common/styles/Hero.module.scss';
+import styles from './Hero.module.scss';
 import { BiLogoGithub, BiLogoInstagramAlt, BiLogoTelegram } from 'react-icons/bi';
-import heroImage from '../../../common/assets/images/home.jpg';
+import heroImage from '../../../../common/assets/images/home.jpg';
 
 const Hero = () => {
 	return (
-		<section className={styles.hero} style={{background: `url(${heroImage}) no-repeat`}}>
+		<section id='hero' className={styles.hero} style={{background: `url(${heroImage}) no-repeat`}}>
 			<div className={styles.content}>
 				<h1>Hi, I'm <span>Dachev Oleh</span></h1>
 				<div className={styles['text-animate']}>
@@ -15,7 +15,7 @@ const Hero = () => {
 					error, expedita illum in inventore, nisi praesentium quod sint tempora tenetur vel. Commodi cum, et.
 				</p>
 
-				<div className={styles['btn-box']}>
+				<div className='btn-box'>
 					<button className='btn primary'>Hire Me</button>
 					<button className='btn secondary'>Let's Talk</button>
 				</div>

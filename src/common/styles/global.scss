@@ -58,13 +58,25 @@ section {
   overflow: hidden;
   cursor: pointer;
   &.primary {
-    background: var(--main-color);
-    color: var(--bg-color);
-    &:hover {
-      color: var(--main-color);
+    &.second {
+      background: var(--main-color);
+      color: var(--second-bg-color);
+      &:hover {
+        color: var(--main-color);
+      }
+      &:before {
+        background: var(--second-bg-color);
+      }
     }
-    &:before {
-      background: var(--bg-color);
+    &:not(.second) {
+      background: var(--main-color);
+      color: var(--bg-color);
+      &:hover {
+        color: var(--main-color);
+      }
+      &:before {
+        background: var(--bg-color);
+      }
     }
   }
   &.secondary {
@@ -91,5 +103,15 @@ section {
     &:before {
       width: 100%;
     }
+  }
+}
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+  &.second {
+    width: max-content;
   }
 }

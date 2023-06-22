@@ -1,9 +1,12 @@
-import styles from '../../styles/Header.module.scss';
+import styles from './Header.module.scss';
 import { BiMenu } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../../../utils/constants';
+import { HEADER_MENU, ROUTES } from '../../../utils/constants';
+import { useState } from 'react';
 
 const Header = () => {
+	const [activeLink, setActiveLink] = useState('hero');
+
 	return (
 		<header className={styles.header}>
 			<Link to={ROUTES.HOME} className={styles.logo}>Yankee.</Link>
@@ -11,11 +14,9 @@ const Header = () => {
 			<BiMenu className={ styles.menu } />
 
 			<nav className={styles.navbar}>
-				<Link className={styles.active} to={{ pathname: ROUTES.HOME, hash: 'home' }}>Home</Link>
-				<Link to={{ pathname: ROUTES.HOME, hash: 'about' }}>About</Link>
-				<Link to={{ pathname: ROUTES.HOME, hash: 'education' }}>Education</Link>
-				<Link to={{ pathname: ROUTES.HOME, hash: 'skills' }}>Skills</Link>
-				<Link to={{ pathname: ROUTES.HOME, hash: 'contact' }}>Contact</Link>
+				{HEADER_MENU.map(({name, href}) => (
+					<a key={ href } href={`#${href}`} className={`${activeLink === href ? styles.active : ''}`} onClick={() => setActiveLink(href)}>{ name }</a>
+				))}
 			</nav>
 		</header>
 	);
