@@ -1,6 +1,11 @@
 .contact {
-  min-height: auto;
-  padding-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--bg-color);
+  padding-bottom: 6rem;
   form {
     max-width: 70rem;
     margin: 0 auto;
@@ -14,6 +19,7 @@
         position: relative;
         width: 49%;
         margin: .8rem 0;
+        z-index: 1;
       }
     }
     .focus {
@@ -48,6 +54,7 @@
       position: relative;
       margin: .8rem 0 2.7rem;
       display: flex;
+      z-index: 1;
       textarea {
         resize: none;
       }

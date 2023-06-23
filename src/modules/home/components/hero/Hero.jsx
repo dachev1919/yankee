@@ -4,7 +4,7 @@ import heroImage from '../../../../common/assets/images/home.jpg';
 
 const Hero = () => {
 	return (
-		<section id='hero' className={styles.hero} style={{background: `url(${heroImage}) no-repeat`}}>
+		<section id='hero' className={`section ${styles.hero}`} style={{background: `url(${heroImage}) no-repeat`}}>
 			<div className={styles.content}>
 				<h1>Hi, I'm <span>Dachev Oleh</span></h1>
 				<div className={styles['text-animate']}>

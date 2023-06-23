@@ -5,7 +5,7 @@ const Contact = () => {
 		e.preventDefault();
 	}
 	return (
-		<section id='contact' className={styles.contact}>
+		<section id='contact' className={`section ${styles.contact}`}>
 			<h2 className='heading'>Contact <span>Me!</span></h2>
 
 			<form onSubmit={submitHandler}>

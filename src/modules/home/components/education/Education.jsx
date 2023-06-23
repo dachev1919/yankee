@@ -3,7 +3,7 @@ import { BiSolidCalendar } from 'react-icons/bi';
 
 const Education = () => {
 	return (
-		<section id='education' className={styles.education}>
+		<section id='education' className={`section ${styles.education}`}>
 			<h2 className='heading'>My <span>Journey</span></h2>
 
 			<div className={styles.row}>

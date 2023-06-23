@@ -13,13 +13,13 @@ const Skills = () => {
 	});
 
 	return (
-		<section id='skills' className={styles.skills}>
+		<section id='skills' className={`section ${styles.skills}`}>
 			<h2 className='heading'>My <span>Skills</span></h2>
-			
+
 			<div className={styles.row}>
 				<div className={styles.column}>
 					<h3 className={styles.title}>Coding Skills</h3>
-					
+
 					<div className={styles.box}>
 						<div className={styles.content}>
 							<div className={`skillsProgress ${styles.progress}`}>

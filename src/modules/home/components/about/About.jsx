@@ -3,7 +3,7 @@ import image from '../../../../common/assets/images/about.jpg';
 
 const About = () => {
 	return (
-		<section id='about' className={styles.about}>
+		<section id='about' className={`section ${styles.about}`}>
 			<h2 className='heading'>About <span>Me</span></h2>
 
 			<div className={styles.image}>
