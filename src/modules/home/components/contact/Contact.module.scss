@@ -20,6 +20,9 @@
         width: 49%;
         margin: .8rem 0;
         z-index: 1;
+        @media screen and (max-width: 462px) {
+          width: 100%;
+        }
       }
     }
     .focus {

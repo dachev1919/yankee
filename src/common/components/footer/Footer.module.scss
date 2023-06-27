@@ -5,6 +5,14 @@
   flex-wrap: wrap;
   padding: 2rem 9%;
   background: var(--second-bg-color);
+  @media screen and (max-width: 991px) {
+    padding: 2rem 4%;
+  }
+  @media screen and (max-width: 462px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    text-align: center;
+  }
   .text {
     p {
       font-size: 1.4rem;

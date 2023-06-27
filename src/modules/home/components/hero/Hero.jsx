@@ -4,7 +4,7 @@ import heroImage from '../../../../common/assets/images/home.jpg';
 
 const Hero = () => {
 	return (
-		<section id='hero' className={`section ${styles.hero}`} style={{background: `url(${heroImage}) no-repeat`}}>
+		<section id='hero' className={`section ${styles.hero}`} style={{background: `url(${heroImage}) 60% center no-repeat`}}>
 			<div className={styles.content}>
 				<h1>Hi, I'm <span>Dachev Oleh</span></h1>
 				<div className={styles['text-animate']}>
@@ -24,7 +24,7 @@ const Hero = () => {
 			<div className={styles.sci}>
 				<a target='_blank' rel='noreferrer' href='https://t.me/Ya_yozh'><BiLogoTelegram /></a>
 				<a target='_blank' rel='noreferrer' href='https://github.com/dachev1919'><BiLogoGithub /></a>
-				<a target='_blank' rel='noreferrer' href='https://www.instagram.com/dachev0leg/'><BiLogoInstagramAlt /></a>
+				<a target='_blank' rel='noreferrer' href='https://www.instagra	m.com/dachev0leg/'><BiLogoInstagramAlt /></a>
 			</div>
 
 			<div className={styles['background-hover']} />

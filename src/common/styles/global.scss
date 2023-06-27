@@ -126,3 +126,20 @@ section {
     color: var(--main-color);
   }
 }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    padding: 7rem 9% 2rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  html {
+    font-size: 45%;
+  }
+}

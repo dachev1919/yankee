@@ -1,11 +1,12 @@
 import styles from './Header.module.scss';
-import { BiMenu } from 'react-icons/bi';
+import { BiMenu, BiX } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { HEADER_MENU, ROUTES } from '../../../utils/constants';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Header = () => {
-	const headerRef = useRef();
+	const headerRef = useRef(null);
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	// sticky
 	document.addEventListener('scroll', () => {
@@ -35,17 +36,21 @@ const Header = () => {
 		// END active navbar links
 	}, []);
 
-
 	return (
 		<header ref={headerRef} id='header' className={styles.header}>
 			<Link to={ROUTES.HOME} className={styles.logo}>Yankee.</Link>
 
-			<BiMenu className={ styles.menu } />
+			<div className={ styles.menu } onClick={() => {
+				setMenuOpen(!menuOpen);
+			}}>
+				{ menuOpen ? <BiX /> : <BiMenu /> }
+			</div>
 
-			<nav className={styles.navbar}>
+			<nav className={`${styles.navbar} ${menuOpen ? styles.open : ''}`}>
 				{HEADER_MENU.map(({name, href}, index) => (
-					<a key={ href } href={`#${href}`} className={`${index === 0 ? styles.active : ''}`}>{ name }</a>
+					<a key={ href } href={`#${href}`} className={`${index === 0 ? styles.active : ''}`} onClick={() => setMenuOpen(false)}>{ name }</a>
 				))}
+				<span className={styles['active-nav']}></span>
 			</nav>
 		</header>
 	);
