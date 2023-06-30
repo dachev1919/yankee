@@ -17,9 +17,11 @@
       .title {
         font-size: 2.5rem;
         margin: 0 0 1.5rem 2rem;
+        position: relative;
       }
       .box {
         border-left: .2rem solid var(--main-color);
+        position: relative;
         .content-wrapper {
           position: relative;
           padding-left: 2rem;
@@ -40,6 +42,8 @@
             border: .2rem solid var(--main-color);
             border-radius: .6rem;
             margin-bottom: 2rem;
+            overflow: hidden;
+            z-index: 1;
             &:before {
               content: '';
               position: absolute;

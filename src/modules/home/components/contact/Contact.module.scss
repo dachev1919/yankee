@@ -63,10 +63,10 @@
       }
     }
     .btns {
-      width: 100%;
-      button {
-        margin: 0 auto;
-      }
+      width: max-content;
+      margin: 0 auto;
+      position: relative;
+
     }
   }
 }

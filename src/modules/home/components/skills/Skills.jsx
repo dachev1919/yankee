@@ -13,12 +13,12 @@ const Skills = () => {
 	});
 
 	return (
-		<section id='skills' className={`section ${styles.skills}`}>
-			<h2 className='heading'>My <span>Skills</span></h2>
+		<section id='skills' className={`custom-bg section ${styles.skills}`}>
+			<h2 className='heading'>My <span>Skills</span><span className='animatedSpan scroll custom-size' style={{ '--i': '1'}}></span></h2>
 
 			<div className={styles.row}>
 				<div className={styles.column}>
-					<h3 className={styles.title}>Coding Skills</h3>
+					<h3 className={styles.title}>Coding Skills<span className='animatedSpan scroll custom-size' style={{ '--i': '2'}}></span></h3>
 
 					<div className={styles.box}>
 						<div className={styles.content}>
@@ -42,11 +42,12 @@ const Skills = () => {
 								<div className={styles.bar}><span></span></div>
 							</div>
 						</div>
+						<span className='animatedSpan scroll custom-size' style={{ '--i': '3'}}></span>
 					</div>
 				</div>
 
 				<div className={styles.column}>
-					<h3 className={styles.title}>Professional Skills</h3>
+					<h3 className={styles.title}>Professional Skills<span className='animatedSpan scroll custom-size' style={{ '--i': '2'}}></span></h3>
 
 					<div className={styles.box}>
 						<div className={styles.content}>
@@ -70,6 +71,7 @@ const Skills = () => {
 								<div className={styles.bar}><span></span></div>
 							</div>
 						</div>
+						<span className='animatedSpan scroll custom-size' style={{ '--i': '3'}}></span>
 					</div>
 				</div>
 			</div>

@@ -23,9 +23,12 @@
   .content {
     text-align: center;
     h3 {
+      position: relative;
+      display: inline;
       font-size: 2.6rem;
     }
     p {
+      position: relative;
       font-size: 1.6rem;
       margin: 2rem 0 3rem;
     }
