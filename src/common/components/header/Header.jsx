@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 import { BiMenu, BiX } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { HEADER_MENU, ROUTES } from '../../../utils/constants';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 const Header = () => {
 	const headerRef = useRef(null);
