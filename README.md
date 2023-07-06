@@ -1,2 +1,2 @@
-# Getting Started with Create React App
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Practicing React for fun
+[Live Result](https://dachev1919.github.io/yankee).
