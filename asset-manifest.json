@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yankee/static/css/main.1ba20772.css",
+    "main.js": "/yankee/static/js/main.e98806c4.js",
+    "static/media/home.jpg": "/yankee/static/media/home.8c29b81f1d8e6f0de3f4.jpg",
+    "static/media/about.jpg": "/yankee/static/media/about.01a5747b16f01a4c6a3d.jpg",
+    "index.html": "/yankee/index.html",
+    "main.1ba20772.css.map": "/yankee/static/css/main.1ba20772.css.map",
+    "main.e98806c4.js.map": "/yankee/static/js/main.e98806c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ba20772.css",
+    "static/js/main.e98806c4.js"
+  ]
+}
